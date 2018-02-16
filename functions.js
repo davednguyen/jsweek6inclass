@@ -9,6 +9,12 @@ helloThere();
 //call function
 evens();
 
+//call function with passing paramenter
+helloAnyone("david nguyen");
+
+//call passing number
+square(10000000);
+
 //create first function
 function firstFunc(){
     console.log("this is first function")
@@ -18,7 +24,7 @@ function firstFunc(){
 function helloThere(){
     var name = prompt("hello what is your name? ");
     console.log("hello " + name);
-}
+};
 
 //create evens function
 
@@ -28,4 +34,15 @@ function evens(){
             console.log(i);
         }
     }
+};
+
+//create a function that take a parameter
+function helloAnyone(name){
+    console.log("hello there: " + name);
+};
+
+//create a function that take number and display on the log
+function square(num){
+    //TODO: validate that number is a number
+    console.log(num*num);
 }
