@@ -4,11 +4,15 @@ console.log("read from functions javascript file");
 firstFunc();    
 
 //call functoin
-helloThere();
+//helloThere();
 
 //call function
 evens();
 
+//call even2 function
+evens2(99);
+evens2(12);
+evens2(875);
 //call function with passing paramenter
 helloAnyone("david nguyen");
 
@@ -35,6 +39,20 @@ function evens(){
         }
     }
 };
+
+function evens2(number){
+    for(i = number; i < number + 21; i++){
+        if(i % 2 == 0){
+            console.log(i);
+        }
+    }
+}
+
+// function evens2(number){
+//     for(i = 10; i < 21; i = i + 2 ){
+//         console.log(i);        
+//     }
+// }
 
 //create a function that take a parameter
 function helloAnyone(name){
